@@ -8,7 +8,7 @@
 
 package com.company;
 
-import java.util.*;
+import java.util.ArrayList;
 
 public class JobScheduler
 {
@@ -23,42 +23,40 @@ public class JobScheduler
         }
 
         public void printJobs()  //prints the array jobs
-        {
-
-        }
+        {  }
 
         //Brute force. Try all n! orderings. Return the schedule with the most profit
         public Schedule bruteForceSolution()
         {
-
+            return null;
         }
 
 
         public Schedule makeScheduleEDF()
         //earliest deadline first schedule. Schedule items contributing 0 to total profit last
         {
-
+            return null;
         }
 
         public Schedule makeScheduleSJF()
         //shortest job first schedule. Schedule items contributing 0 to total profit last
         {
-
+            return null;
         }
 
         public Schedule makeScheduleHPF()
         //highest profit first schedule. Schedule items contributing 0 to total profit last
         {
-
+            return null;
         }
 
 
         public Schedule newApproxSchedule() //Your own creation. Must be <= O(n3)
         {
-
+            return null;
         }
 
-    }//end of JobScheduler class
+
 
     //---------------------------Include Job and Schedule classes in JobScheduler. java-----------------------------
     class Job
@@ -101,15 +99,16 @@ public class JobScheduler
             schedule = new ArrayList<Job>();
         }
 
-        public void add(NPJob job)
+        public void add(Job job)
         {
-
+            schedule.add(job);
         }
 
 
         public int getProfit()
         {
 
+            return profit;
         }
 
         public String toString()
@@ -130,4 +129,5 @@ public class JobScheduler
     {
 	    // write your code here
     }
-}
+
+}//end of JobScheduler class
