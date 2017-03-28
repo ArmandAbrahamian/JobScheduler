@@ -14,40 +14,83 @@ public class JobScheduler
 {
 
         private int nJobs;
-        private Job[]  jobs;
+        private Job[] jobs;
 
+        /**
+         * Constructor for JobScheduler.
+         * @param joblength the time needed to complete each job.
+         * @param deadline  the deadline of each job
+         * @param profit    the amount of profit for each job
+         */
         public JobScheduler( int[] joblength, int[] deadline, int[] profit)
         {
             //Set nJobs
+            nJobs = joblength.length;
+
             //Fill jobs array. The kth job entered has JobNo = k;
+            jobs = new Job[nJobs];
+            for(int index = 0; index < nJobs; index++)
+            {
+                jobs[index] = new Job(index, joblength[index], deadline[index], profit[index]);
+            }
         }
 
         public void printJobs()  //prints the array jobs
-        {  }
+        {
+            for(int index = 0; index < nJobs; index++)
+            {
+                jobs[index].toString();
+            }
+        }
 
         //Brute force. Try all n! orderings. Return the schedule with the most profit
         public Schedule bruteForceSolution()
         {
-            return null;
+            Schedule bruteForce_Schedule = new Schedule();
+            
+            return bruteForce_Schedule;
         }
 
 
         public Schedule makeScheduleEDF()
         //earliest deadline first schedule. Schedule items contributing 0 to total profit last
         {
-            return null;
+            Schedule EDF_Schedule = new Schedule();
+            int tempIndex = 0;
+
+            // Sort items by deadline from small to large.
+            for(int i = 0; i < nJobs; i++)
+            {
+                int earliestDeadlineJobIndex = i;
+
+                for(int j = i + 1; j < nJobs; j++)
+                {
+                    if(jobs[j].deadline < jobs[earliestDeadlineJobIndex].deadline)
+                    {
+                        tempIndex = j;
+                    }
+                }
+                
+                swap(tempIndex, i, jobs);
+            }
+
+            return EDF_Schedule;
         }
 
         public Schedule makeScheduleSJF()
         //shortest job first schedule. Schedule items contributing 0 to total profit last
         {
-            return null;
+            Schedule SJF_Schedule = new Schedule();
+
+            return SJF_Schedule;
         }
 
         public Schedule makeScheduleHPF()
         //highest profit first schedule. Schedule items contributing 0 to total profit last
         {
-            return null;
+            Schedule HPF_Schedule = new Schedule();
+
+            return HPF_Schedule;
         }
 
 
@@ -56,6 +99,18 @@ public class JobScheduler
             return null;
         }
 
+        /**
+         *  Helper function to swap two elements in the array.
+         * @param item1
+         * @param item2
+         * @param a
+         */
+        private static void swap(int item1, int item2, Job a[])
+        {
+            Job tempItem = a[item1]; // item1 into tempItem, tempItem is used to swap elements in the array;
+            a[item1] = a[item2];     // item2 into item1
+            a[item2] = tempItem;     // tempItem into item2
+        } // end swap
 
 
     //---------------------------Include Job and Schedule classes in JobScheduler. java-----------------------------
@@ -107,7 +162,6 @@ public class JobScheduler
 
         public int getProfit()
         {
-
             return profit;
         }
 
