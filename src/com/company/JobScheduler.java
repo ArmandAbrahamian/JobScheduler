@@ -39,7 +39,7 @@ public class JobScheduler
         {
             for(int index = 0; index < nJobs; index++)
             {
-                jobs[index].toString();
+                System.out.println(jobs[index].toString());
             }
         }
 
