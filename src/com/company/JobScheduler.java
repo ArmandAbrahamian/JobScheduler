@@ -56,7 +56,7 @@ public class JobScheduler
         //earliest deadline first schedule. Schedule items contributing 0 to total profit last
         {
             Schedule EDF_Schedule = new Schedule();
-            int tempIndex = 0;
+            int tempIndex;
 
             // Sort items by deadline from small to large.
             for(int i = 0; i < nJobs; i++)
@@ -68,21 +68,87 @@ public class JobScheduler
                     if(jobs[j].deadline < jobs[earliestDeadlineJobIndex].deadline)
                     {
                         tempIndex = j;
+                        swap(tempIndex, i, jobs);
                     }
                 }
-                
-                swap(tempIndex, i, jobs);
-            }
 
+            }
+            System.out.println("EDF");
+            printJobs();
             return EDF_Schedule;
         }
 
-        public Schedule makeScheduleSJF()
+    /**
+     * sort the jobs in shortest job(length) first order
+     * if each job unable to finish before the deadline,
+     * it move to end of array.
+     * @return
+     */
+    public Schedule makeScheduleSJF()
         //shortest job first schedule. Schedule items contributing 0 to total profit last
         {
+            // create sjf_schedule object
             Schedule SJF_Schedule = new Schedule();
 
+            // for swap
+            int tempIndex;
+
+            // Sort items by deadline from small to large.
+            for(int i = 0; i < nJobs; i++)
+            {
+                for(int j = i + 1; j < nJobs; j++)
+                {
+                    if(jobs[j].length < jobs[i].length)
+                    {
+                        tempIndex = j;
+                        swap(tempIndex, i, jobs);
+                    }
+                }
+            }
+
+            //schedule jobs
+            int startTime = 0;
+            int profits = 0;
+            for (int i = 0; i < nJobs; i++) {
+
+                // if the job can finish earlier than deadline
+                // only this jobs can be counted as profits
+                if((startTime + jobs[i].length) <= jobs[i].deadline) {
+                    jobs[i].start = startTime;
+                    jobs[i].finish = startTime + jobs[i].length;
+                    startTime = jobs[i].finish;
+                    profits = profits + jobs[i].profit;
+                }
+
+                // we move to end of the array
+                // if the job can't finish before deadline,
+                // and its not last element.
+                else if(i < nJobs-1){
+                    swap(i, (nJobs-1), jobs); //THIS IS WRONG, we need move to last function
+                    jobs[i].start = startTime;
+                    jobs[i].finish = startTime + jobs[i].length;
+                    startTime = jobs[i].finish;
+                }
+
+                // if it's last element
+                else {
+                    jobs[i].start = startTime;
+                    jobs[i].finish = startTime + jobs[i].length;
+                    startTime = jobs[i].finish;
+                }
+
+            }
+
+            // update profit of this schedule
+            SJF_Schedule.profit = profits;
+
+            //add each jobs to schedule
+            for (int i = 0; i < nJobs; i++) {
+                SJF_Schedule.add(jobs[i]);
+            }
+
             return SJF_Schedule;
+
         }
 
         public Schedule makeScheduleHPF()
@@ -140,8 +206,6 @@ public class JobScheduler
 
     }//end of Job class
 
-
-
     // ----------------------------------------------------
     class Schedule
     {
@@ -158,7 +222,6 @@ public class JobScheduler
         {
             schedule.add(job);
         }
-
 
         public int getProfit()
         {
@@ -182,6 +245,24 @@ public class JobScheduler
     public static void main(String[] args)
     {
 	    // write your code here
+        int[] length = {7,4,2,5};
+        int[] deadline = {7 ,16 ,8, 10};
+        int[] profit = {10, 9, 14, 13};
+        JobScheduler js = new JobScheduler(length, deadline, profit);
+        System.out.println("Jobs to be scheduled");
+        System.out.println("Job format is " +
+                "(length, deadline, profit, start, finish)" );
+        js.printJobs();
+
+        //---------------------------------------
+        //System.out.println("\nEDF with unprofitable jobs last ");
+        //Schedule EDFPSchedule = js.makeScheduleEDF();
+        //System.out.println(EDFPSchedule);
+
+        //-------------------------------------
+        System.out.println("\nSJF with unprofitable jobs last");
+        Schedule SJFPSchedule = js.makeScheduleSJF();
+        System.out.println(SJFPSchedule);
     }
 
 }//end of JobScheduler class
