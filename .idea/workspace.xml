@@ -22,14 +22,19 @@
       <file leaf-file-name="JobScheduler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2641">
-              <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+            <state relative-caret-position="543">
+              <caret line="104" column="38" lean-forward="false" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
               <folding>
                 <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
                 <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
                 <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
                 <element signature="method#bruteForceSolution#0;class#JobScheduler#0" expanded="false" />
                 <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+                <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+                <element signature="method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+                <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+                <element signature="e#9028#9029#0" expanded="true" />
+                <element signature="e#9065#9066#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -346,8 +351,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="2" width="1818" height="1086" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="2" width="1818" height="1086" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -358,7 +362,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.50222224" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35511065" sideWeight="0.4977778" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.4977778" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33652925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -407,6 +411,11 @@
             <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#bruteForceSolution#0;class#JobScheduler#0" expanded="false" />
             <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#9028#9029#0" expanded="true" />
+            <element signature="e#9065#9066#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -421,6 +430,11 @@
             <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#bruteForceSolution#0;class#JobScheduler#0" expanded="false" />
             <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#9028#9029#0" expanded="true" />
+            <element signature="e#9065#9066#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -435,6 +449,11 @@
             <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#bruteForceSolution#0;class#JobScheduler#0" expanded="false" />
             <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#9028#9029#0" expanded="true" />
+            <element signature="e#9065#9066#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -449,6 +468,11 @@
             <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#bruteForceSolution#0;class#JobScheduler#0" expanded="false" />
             <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#9028#9029#0" expanded="true" />
+            <element signature="e#9065#9066#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -463,6 +487,11 @@
             <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#bruteForceSolution#0;class#JobScheduler#0" expanded="false" />
             <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#9028#9029#0" expanded="true" />
+            <element signature="e#9065#9066#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -473,14 +502,19 @@
     <entry file="file://C:/COMP282/Programming Assignments/Programming Assignment #4/prog4.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2641">
-          <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+        <state relative-caret-position="543">
+          <caret line="104" column="38" lean-forward="false" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
           <folding>
             <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#bruteForceSolution#0;class#JobScheduler#0" expanded="false" />
             <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#9028#9029#0" expanded="true" />
+            <element signature="e#9065#9066#0" expanded="true" />
           </folding>
         </state>
       </provider>
