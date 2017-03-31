@@ -22,9 +22,15 @@
       <file leaf-file-name="JobScheduler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-2641">
+              <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
+                <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
+                <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+                <element signature="method#bruteForceSolution#0;class#JobScheduler#0" expanded="false" />
+                <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -280,6 +286,34 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
     </list>
@@ -312,7 +346,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="2" width="1818" height="1086" extended-state="0" />
+    <frame x="-8" y="2" width="1818" height="1086" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -321,9 +356,9 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.50222224" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41728136" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35511065" sideWeight="0.4977778" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33652925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -366,7 +401,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#bruteForceSolution#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -374,7 +415,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#bruteForceSolution#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -382,7 +429,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#bruteForceSolution#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -390,7 +443,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#bruteForceSolution#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -398,7 +457,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#bruteForceSolution#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -408,9 +473,15 @@
     <entry file="file://C:/COMP282/Programming Assignments/Programming Assignment #4/prog4.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-2641">
+          <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#bruteForceSolution#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

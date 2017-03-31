@@ -91,7 +91,7 @@ public class JobScheduler
             Schedule SJF_Schedule = new Schedule();
             Schedule temp_jobs = new Schedule();
 
-            // for swap
+            // for sort
             int tempIndex;
 
             // Sort items by deadline from small to large.
@@ -124,15 +124,16 @@ public class JobScheduler
 
                 // we move to temporary array list if it can't be done in deadline
                 else {
-                    jobs[i].start = startTime;
-                    jobs[i].finish = startTime + jobs[i].length;
-                    startTime = jobs[i].finish;
                     temp_jobs.add(jobs[i]);
                 }
 
             }
-            // put temporary jobs to end of schedule
+            // schedule 0 profit jobs
+            // and put temporary jobs to end of schedule
             for (int i = 0; i < temp_jobs.schedule.size(); i++) {
+                temp_jobs.schedule.get(i).start = startTime;
+                temp_jobs.schedule.get(i).finish = startTime + temp_jobs.schedule.get(i).length;
+                startTime = temp_jobs.schedule.get(i).finish;
                 SJF_Schedule.add(temp_jobs.schedule.get(i));
             }
 
@@ -146,7 +147,58 @@ public class JobScheduler
         public Schedule makeScheduleHPF()
         //highest profit first schedule. Schedule items contributing 0 to total profit last
         {
+            // create hpf_schedule object, temporary job array list
             Schedule HPF_Schedule = new Schedule();
+            Schedule temp_jobs = new Schedule();
+
+            // for sort
+            int tempIndex;
+
+            // Sort items by deadline from small to large.
+            for(int i = 0; i < nJobs; i++)
+            {
+                for(int j = i + 1; j < nJobs; j++)
+                {
+                    if(jobs[j].profit > jobs[i].profit)
+                    {
+                        tempIndex = j;
+                        swap(tempIndex, i, jobs);
+                    }
+                }
+            }
+
+            //schedule jobs
+            int startTime = 0;
+            int profits = 0;
+            for (int i = 0; i < nJobs; i++) {
+
+                // if the job can finish earlier than deadline
+                // update profits, and schedule jobs
+                if((startTime + jobs[i].length) <= jobs[i].deadline) {
+                    jobs[i].start = startTime;
+                    jobs[i].finish = startTime + jobs[i].length;
+                    startTime = jobs[i].finish;
+                    profits = profits + jobs[i].profit;
+                    HPF_Schedule.add(jobs[i]);
+                }
+
+                // we move to temporary array list if it can't be done in deadline
+                else {
+                    temp_jobs.add(jobs[i]);
+                }
+
+            }
+            // schedule 0 profit jobs
+            // and put temporary jobs to end of schedule
+            for (int i = 0; i < temp_jobs.schedule.size(); i++) {
+                temp_jobs.schedule.get(i).start = startTime;
+                temp_jobs.schedule.get(i).finish = startTime + temp_jobs.schedule.get(i).length;
+                startTime = temp_jobs.schedule.get(i).finish;
+                HPF_Schedule.add(temp_jobs.schedule.get(i));
+            }
+
+            // update profit of this schedule
+            HPF_Schedule.profit = profits;
 
             return HPF_Schedule;
         }
@@ -255,6 +307,11 @@ public class JobScheduler
         System.out.println("\nSJF with unprofitable jobs last");
         Schedule SJFPSchedule = js.makeScheduleSJF();
         System.out.println(SJFPSchedule);
+
+        //--------------------------------------------
+        System.out.println("\nHPF with unprofitable jobs last");
+        Schedule HPFSchedule = js.makeScheduleHPF();
+        System.out.println(HPFSchedule);
     }
 
 }//end of JobScheduler class
