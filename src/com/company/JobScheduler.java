@@ -47,13 +47,15 @@ public class JobScheduler {
         return bruteForce_Schedule;
     }
 
-
+    /**
+     *
+     * @return
+     */
     public Schedule makeScheduleEDF()
     //earliest deadline first schedule. Schedule items contributing 0 to total profit last
     {
-        // create edf_schedule object, temporary job array list
+        // create edf_schedule object
         Schedule EDF_Schedule = new Schedule();
-        Schedule temp_jobs = new Schedule();
 
         // for sort
         int tempIndex;
@@ -71,40 +73,7 @@ public class JobScheduler {
 
         }
 
-        //schedule jobs
-        int startTime = 0;
-        int profits = 0;
-        for (int i = 0; i < nJobs; i++) {
-
-            // if the job can finish earlier than deadline
-            // update profits, and add to schedule
-            if ((startTime + jobs[i].length) <= jobs[i].deadline) {
-                jobs[i].start = startTime;
-                jobs[i].finish = startTime + jobs[i].length;
-                startTime = jobs[i].finish;
-                profits = profits + jobs[i].profit;
-                EDF_Schedule.add(jobs[i]);
-            }
-
-            // we move to temporary array list if it can't be done in deadline
-            else {
-                temp_jobs.add(jobs[i]);
-            }
-
-        }
-        // schedule 0 profit jobs
-        // and put temporary jobs to end of schedule
-        for (int i = 0; i < temp_jobs.schedule.size(); i++) {
-            temp_jobs.schedule.get(i).start = startTime;
-            temp_jobs.schedule.get(i).finish = startTime + temp_jobs.schedule.get(i).length;
-            startTime = temp_jobs.schedule.get(i).finish;
-            EDF_Schedule.add(temp_jobs.schedule.get(i));
-        }
-
-        // update profit of this schedule
-        EDF_Schedule.profit = profits;
-
-        return EDF_Schedule;
+        return scheduleJobs(EDF_Schedule);
     }
 
     /**
@@ -117,9 +86,9 @@ public class JobScheduler {
     public Schedule makeScheduleSJF()
     //shortest job first schedule. Schedule items contributing 0 to total profit last
     {
-        // create sjf_schedule object, temporary job array list
+        // create sjf_schedule object
         Schedule SJF_Schedule = new Schedule();
-        Schedule temp_jobs = new Schedule();
+
 
         // for sort
         int tempIndex;
@@ -134,49 +103,20 @@ public class JobScheduler {
             }
         }
 
-        //schedule jobs
-        int startTime = 0;
-        int profits = 0;
-        for (int i = 0; i < nJobs; i++) {
-
-            // if the job can finish earlier than deadline
-            // update profits, and add to schedule
-            if ((startTime + jobs[i].length) <= jobs[i].deadline) {
-                jobs[i].start = startTime;
-                jobs[i].finish = startTime + jobs[i].length;
-                startTime = jobs[i].finish;
-                profits = profits + jobs[i].profit;
-                SJF_Schedule.add(jobs[i]);
-            }
-
-            // we move to temporary array list if it can't be done in deadline
-            else {
-                temp_jobs.add(jobs[i]);
-            }
-
-        }
-        // schedule 0 profit jobs
-        // and put temporary jobs to end of schedule
-        for (int i = 0; i < temp_jobs.schedule.size(); i++) {
-            temp_jobs.schedule.get(i).start = startTime;
-            temp_jobs.schedule.get(i).finish = startTime + temp_jobs.schedule.get(i).length;
-            startTime = temp_jobs.schedule.get(i).finish;
-            SJF_Schedule.add(temp_jobs.schedule.get(i));
-        }
-
-        // update profit of this schedule
-        SJF_Schedule.profit = profits;
-
-        return SJF_Schedule;
+        return scheduleJobs(SJF_Schedule);
 
     }
 
+    /**
+     *
+     * @return
+     */
     public Schedule makeScheduleHPF()
     //highest profit first schedule. Schedule items contributing 0 to total profit last
     {
-        // create hpf_schedule object, temporary job array list
+        // create hpf_schedule object,
         Schedule HPF_Schedule = new Schedule();
-        Schedule temp_jobs = new Schedule();
+
 
         // for sort
         int tempIndex;
@@ -191,6 +131,19 @@ public class JobScheduler {
             }
         }
 
+        return scheduleJobs(HPF_Schedule);
+    }
+
+    /**
+     *
+     * @param schedule
+     * @return
+     */
+    public Schedule scheduleJobs(Schedule schedule) {
+
+        // temporary job array list
+        Schedule temp_jobs = new Schedule();
+
         //schedule jobs
         int startTime = 0;
         int profits = 0;
@@ -203,7 +156,7 @@ public class JobScheduler {
                 jobs[i].finish = startTime + jobs[i].length;
                 startTime = jobs[i].finish;
                 profits = profits + jobs[i].profit;
-                HPF_Schedule.add(jobs[i]);
+                schedule.add(jobs[i]);
             }
 
             // we move to temporary array list if it can't be done in deadline
@@ -218,13 +171,13 @@ public class JobScheduler {
             temp_jobs.schedule.get(i).start = startTime;
             temp_jobs.schedule.get(i).finish = startTime + temp_jobs.schedule.get(i).length;
             startTime = temp_jobs.schedule.get(i).finish;
-            HPF_Schedule.add(temp_jobs.schedule.get(i));
+            schedule.add(temp_jobs.schedule.get(i));
         }
 
         // update profit of this schedule
-        HPF_Schedule.profit = profits;
+        schedule.profit = profits;
 
-        return HPF_Schedule;
+        return schedule;
     }
 
 
