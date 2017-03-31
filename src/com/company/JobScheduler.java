@@ -87,8 +87,9 @@ public class JobScheduler
     public Schedule makeScheduleSJF()
         //shortest job first schedule. Schedule items contributing 0 to total profit last
         {
-            // create sjf_schedule object
+            // create sjf_schedule object, temporary job array list
             Schedule SJF_Schedule = new Schedule();
+            Schedule temp_jobs = new Schedule();
 
             // for swap
             int tempIndex;
@@ -112,40 +113,31 @@ public class JobScheduler
             for (int i = 0; i < nJobs; i++) {
 
                 // if the job can finish earlier than deadline
-                // only this jobs can be counted as profits
+                // update profits, and add to schedule
                 if((startTime + jobs[i].length) <= jobs[i].deadline) {
                     jobs[i].start = startTime;
                     jobs[i].finish = startTime + jobs[i].length;
                     startTime = jobs[i].finish;
                     profits = profits + jobs[i].profit;
+                    SJF_Schedule.add(jobs[i]);
                 }
 
-                // we move to end of the array
-                // if the job can't finish before deadline,
-                // and its not last element.
-                else if(i < nJobs-1){
-                    swap(i, (nJobs-1), jobs); //THIS IS WRONG, we need move to last function
-                    jobs[i].start = startTime;
-                    jobs[i].finish = startTime + jobs[i].length;
-                    startTime = jobs[i].finish;
-                }
-
-                // if it's last element
+                // we move to temporary array list if it can't be done in deadline
                 else {
                     jobs[i].start = startTime;
                     jobs[i].finish = startTime + jobs[i].length;
                     startTime = jobs[i].finish;
+                    temp_jobs.add(jobs[i]);
                 }
 
+            }
+            // put temporary jobs to end of schedule
+            for (int i = 0; i < temp_jobs.schedule.size(); i++) {
+                SJF_Schedule.add(temp_jobs.schedule.get(i));
             }
 
             // update profit of this schedule
             SJF_Schedule.profit = profits;
-
-            //add each jobs to schedule
-            for (int i = 0; i < nJobs; i++) {
-                SJF_Schedule.add(jobs[i]);
-            }
 
             return SJF_Schedule;
 
@@ -255,9 +247,9 @@ public class JobScheduler
         js.printJobs();
 
         //---------------------------------------
-        //System.out.println("\nEDF with unprofitable jobs last ");
-        //Schedule EDFPSchedule = js.makeScheduleEDF();
-        //System.out.println(EDFPSchedule);
+        System.out.println("\nEDF with unprofitable jobs last ");
+        Schedule EDFPSchedule = js.makeScheduleEDF();
+        System.out.println(EDFPSchedule);
 
         //-------------------------------------
         System.out.println("\nSJF with unprofitable jobs last");
