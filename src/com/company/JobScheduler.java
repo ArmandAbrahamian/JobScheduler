@@ -8,8 +8,6 @@
 
 package com.company;
 
-import jdk.management.resource.internal.inst.FileOutputStreamRMHooks;
-
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -17,7 +15,10 @@ public class JobScheduler
 {
     private int nJobs;
     private Job[] jobs;
-
+    // these variables are for brute force schedule
+    private static int maxProfit;
+    private static Schedule bruteForceSchedule;
+    
     /**
      * Constructor for JobScheduler.
      *
@@ -48,45 +49,65 @@ public class JobScheduler
     //Brute force. Try all n! orderings. Return the schedule with the most profit
     public Schedule bruteForceSolution()
     {
-        Schedule bruteForce_Schedule = new Schedule();
+        bruteForceSchedule = new Schedule();
+
+        // initialize to 0 for max profit when this method called
+        maxProfit = 0;
 
         // array of all the possible combinations of index
-        getAllComb(jobs,0);
+        findMaxProfitSchedule(jobs,0);
 
+        // update schedule profit
+        bruteForceSchedule.profit = maxProfit;
 
-        return bruteForce_Schedule;
+        // if all jobs has 0 profit at first
+        if(maxProfit == 0) {
+            return scheduleJobs(bruteForceSchedule);
+        }
+
+        return bruteForceSchedule;
     }
 
     /**
-     * create a a list of all possible combination of 1 to n jobs indices
+     * try all the combination of jobs schedule and calculate total profit : O(n!)
+     * and get the maximum profit schedule O(n^2) and deep copy to static brute force object O(n)
      * @param jobs
      */
-    private void getAllComb(Job[] jobs, int start) {
+    private void findMaxProfitSchedule(Job[] jobs, int start) {
 
         int size = jobs.length;
 
         if(size == start + 1) {
             // create schedule
             Schedule sc = new Schedule();
-
-            for (int i = 0; i < size; i++) {
-                System.out.print(jobs[i] + ",  ");
-                sc.schedule.add(jobs[i]);
+            // it will schedule jobs and calculate total profit
+            sc = scheduleJobs(sc);
+            // compare current schedule profit with current max profit
+            if(sc.profit > maxProfit) {
+                // if it is bigger than current profit, update max profit
+                maxProfit = sc.profit;
+                // initialize index, brute force schedule object
+                int i = 0;
+                bruteForceSchedule = new Schedule();
+                // deep copy the current schedule jobs array list
+                for (Job j : sc.schedule) {
+                    bruteForceSchedule.schedule.add(new Job(j.jobNumber, j.length, j.deadline, j.profit));
+                    bruteForceSchedule.schedule.get(i).start = j.start;
+                    bruteForceSchedule.schedule.get(i).finish = j.finish;
+                    i++;
+                }
             }
-            // print out the jobs combination and profit.
-            // THIS PART IS NOT DONE,
-            // IT STILL NEED TO CHECK IF JOBS CAN BE DONE IN DEADLINE
-            System.out.print(scheduleJobs(sc).profit);
-            System.out.println();
         }
+        // driver to try all the combinations (permutation)
         else {
             for (int i = start; i < size; i++) {
                 Job temp = jobs[i];
                 jobs[i] = jobs[start];
                 jobs[start] = temp;
-                getAllComb(jobs, start + 1);
+                findMaxProfitSchedule(jobs, start + 1);
             }
         }
+
     }
 
     /**
@@ -142,7 +163,6 @@ public class JobScheduler
         }
         
         return scheduleJobs(SJF_Schedule);
-
     }
 
     /**
@@ -184,7 +204,6 @@ public class JobScheduler
         int profits = 0;
         for (int i = 0; i < nJobs; i++)
         {
-
             // if the job can finish earlier than deadline
             // update profits, and schedule jobs
             if ((startTime + jobs[i].length) <= jobs[i].deadline)
@@ -201,7 +220,6 @@ public class JobScheduler
             {
                 temp_jobs.add(jobs[i]);
             }
-
         }
         // schedule 0 profit for jobs that don't meet the deadline
         // and place the temporary jobs at the end of the schedule
@@ -218,7 +236,7 @@ public class JobScheduler
 
         return schedule;                                                                             
     }
-
+    
     /**
      * Scheduling algorithm that organizes the jobs based on the ratio of profit to job length. Takes O(n^2) time.
      * @return Schedule based on ratio of profit to job length.
@@ -240,7 +258,7 @@ public class JobScheduler
                 }
             }
         }
-        
+
         return scheduleJobs(newApprox_Schedule);
     }
 
@@ -251,7 +269,8 @@ public class JobScheduler
      * @param item2
      * @param a
      */
-    private static void swap(int item1, int item2, Job a[]) {
+    private static void swap(int item1, int item2, Job a[])
+    {
         Job tempItem = a[item1]; // item1 into tempItem, tempItem is used to swap elements in the array;
         a[item1] = a[item2];     // item2 into item1
         a[item2] = tempItem;     // tempItem into item2
@@ -284,6 +303,7 @@ public class JobScheduler
                     "," + start + "," + finish + ")";
         }
 
+
     }//end of Job class
 
     // ----------------------------------------------------
@@ -315,7 +335,7 @@ public class JobScheduler
         }
     }// end of Schedule class
 
-
+    
     public static void main(String[] args)
     {
         // Generate a random number for the number of tests.
@@ -342,8 +362,10 @@ public class JobScheduler
                 "(length, deadline, profit, start, finish)");
         js.printJobs();
 
-        //--------------------------------------------
+        //---------------------------------------
         System.out.println("\nOptimal Solution Using Brute Force O(n!)");
+        Schedule bestSchedule = js.bruteForceSolution();
+        System.out.println(bestSchedule);
 
         //---------------------------------------
         System.out.println("\nEDF with unprofitable jobs last ");
