@@ -11,6 +11,7 @@ package com.company;
 import jdk.management.resource.internal.inst.FileOutputStreamRMHooks;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class JobScheduler
 {
@@ -317,9 +318,24 @@ public class JobScheduler
 
     public static void main(String[] args)
     {
-        int[] length = {7,4,2,5};
-        int[] deadline = {7 ,16 ,8, 10};
-        int[] profit = {10, 9, 14, 13};
+        // Generate a random number for the number of tests.
+        Random ran = new Random();
+        int min = 2;
+        int max = 11;
+        int numberOfTests = ran.nextInt((max - min) + 1) + min;
+
+        int[] length = new int[numberOfTests];
+        int[] deadline = new int[numberOfTests];
+        int[] profit = new int[numberOfTests];
+
+        // Generate random values for job length, deadline, and profits.
+        for(int index = 0; index < numberOfTests; index++)
+        {
+            length[index] = ran.nextInt((10 - 1) + 1) + 1;
+            deadline[index] = ran.nextInt((30 - 1) + 1) + 1;;
+            profit[index] = ran.nextInt((100 - 0) + 1) + 0;
+        }
+
         JobScheduler js = new JobScheduler(length, deadline, profit);
         System.out.println("Jobs to be scheduled");
         System.out.println("Job format is " +
