@@ -8,14 +8,16 @@
 
 package com.company;
 
-import jdk.management.resource.internal.inst.FileOutputStreamRMHooks;
-
 import java.util.ArrayList;
 
 public class JobScheduler {
 
     private int nJobs;
     private Job[] jobs;
+    // these variables are for brute force schedule
+    private static int maxProfit;
+    private static Schedule bruteForceSchedule;
+
 
     /**
      * Constructor for JobScheduler.
@@ -44,45 +46,67 @@ public class JobScheduler {
 
     //Brute force. Try all n! orderings. Return the schedule with the most profit
     public Schedule bruteForceSolution() {
-        Schedule bruteForce_Schedule = new Schedule();
+
+        bruteForceSchedule = new Schedule();
+
+        // initialize to 0 for max profit when this method called
+        maxProfit = 0;
 
         // array of all the possible combinations of index
-        getAllComb(jobs,0);
+        findMaxProfitSchedule(jobs,0);
 
+        // update schedule profit
+        bruteForceSchedule.profit = maxProfit;
 
-        return bruteForce_Schedule;
+        // if all jobs has 0 profit at first
+        if(maxProfit == 0) {
+            return scheduleJobs(bruteForceSchedule);
+        }
+
+        return bruteForceSchedule;
+
     }
 
     /**
-     * create a a list of all possible combination of 1 to n jobs indices
+     * try all the combination of jobs schedule and calculate total profit : O(n!),
+     * and get the maximum profit schedule and deep copy to static brute force object : O(n^2)
      * @param jobs
      */
-    private void getAllComb(Job[] jobs, int start) {
+    private void findMaxProfitSchedule(Job[] jobs, int start) {
 
         int size = jobs.length;
 
         if(size == start + 1) {
             // create schedule
             Schedule sc = new Schedule();
-
-            for (int i = 0; i < size; i++) {
-                System.out.print(jobs[i] + ",  ");
-                sc.schedule.add(jobs[i]);
+            // it will schedule jobs and calculate total profit
+            sc = scheduleJobs(sc);
+            // compare current schedule profit with current max profit
+            if(sc.profit > maxProfit) {
+                // if it is bigger than current profit, update max profit
+                maxProfit = sc.profit;
+                // initialize index, brute force schedule object
+                int i = 0;
+                bruteForceSchedule = new Schedule();
+                // deep copy the current schedule jobs array list
+                for (Job j : sc.schedule) {
+                    bruteForceSchedule.schedule.add(new Job(j.jobNumber, j.length, j.deadline, j.profit));
+                    bruteForceSchedule.schedule.get(i).start = j.start;
+                    bruteForceSchedule.schedule.get(i).finish = j.finish;
+                    i++;
+                }
             }
-            // print out the jobs combination and profit.
-            // THIS PART IS NOT DONE,
-            // IT STILL NEED TO CHECK IF JOBS CAN BE DONE IN DEADLINE
-            System.out.print(scheduleJobs(sc).profit);
-            System.out.println();
         }
+        // driver to try all the combinations (permutation)
         else {
             for (int i = start; i < size; i++) {
                 Job temp = jobs[i];
                 jobs[i] = jobs[start];
                 jobs[start] = temp;
-                getAllComb(jobs, start + 1);
+                findMaxProfitSchedule(jobs, start + 1);
             }
         }
+
     }
 
     /**
@@ -264,6 +288,7 @@ public class JobScheduler {
                     "," + start + "," + finish + ")";
         }
 
+
     }//end of Job class
 
     // ----------------------------------------------------
@@ -300,14 +325,17 @@ public class JobScheduler {
         // write your code here
         int[] length = {7, 4, 2, 5};
         int[] deadline = {7, 16, 8, 10};
-        int[] profit = {10, 9, 14, 13};
+        int[] profit = {0, 0, 0, 0};
         JobScheduler js = new JobScheduler(length, deadline, profit);
         System.out.println("Jobs to be scheduled");
         System.out.println("Job format is " +
                 "(length, deadline, profit, start, finish)");
         js.printJobs();
 
-        js.bruteForceSolution();
+        //---------------------------------------
+        System.out.println("\nOptimal Solution Using Brute Force O(n!)");
+        Schedule bestSchedule = js.bruteForceSolution();
+        System.out.println(bestSchedule);
 
         //---------------------------------------
         System.out.println("\nEDF with unprofitable jobs last ");

@@ -22,17 +22,26 @@
       <file leaf-file-name="JobScheduler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="309" column="32" lean-forward="true" selection-start-line="309" selection-start-column="32" selection-end-line="309" selection-end-column="32" />
+            <state relative-caret-position="234">
+              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
                 <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-                <marker date="1491031176462" expanded="false" signature="7561:8119" ph="{...}" />
-                <marker date="1491031176462" expanded="false" signature="7757:7772" ph=" { " />
-                <marker date="1491031176462" expanded="false" signature="7790:7800" ph=" }" />
-                <marker date="1491031176462" expanded="false" signature="7832:7847" ph=" { " />
-                <marker date="1491031176462" expanded="false" signature="7861:7871" ph=" }" />
+                <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+                <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
+                <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
+                <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+                <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+                <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+                <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+                <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+                <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
+                <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
+                <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+                <element signature="e#8802#8803#0" expanded="true" />
+                <element signature="e#8843#8844#0" expanded="true" />
+                <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
+                <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -355,13 +364,13 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32502398" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32466182" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.50222224" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8563996" sideWeight="0.5044346" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.089490116" sideWeight="0.4977778" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43080124" sideWeight="0.4955654" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33652925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -372,7 +381,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -412,27 +421,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/JobScheduler.java</url>
-          <line>313</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/JobScheduler.java</url>
-          <line>318</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/JobScheduler.java</url>
-          <line>323</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -446,14 +435,23 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <marker date="1491031176462" expanded="false" signature="7561:8119" ph="{...}" />
-            <marker date="1491031176462" expanded="false" signature="7757:7772" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7790:7800" ph=" }" />
-            <marker date="1491031176462" expanded="false" signature="7832:7847" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7861:7871" ph=" }" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#8802#8803#0" expanded="true" />
+            <element signature="e#8843#8844#0" expanded="true" />
+            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
+            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -463,14 +461,23 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <marker date="1491031176462" expanded="false" signature="7561:8119" ph="{...}" />
-            <marker date="1491031176462" expanded="false" signature="7757:7772" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7790:7800" ph=" }" />
-            <marker date="1491031176462" expanded="false" signature="7832:7847" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7861:7871" ph=" }" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#8802#8803#0" expanded="true" />
+            <element signature="e#8843#8844#0" expanded="true" />
+            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
+            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -480,14 +487,23 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <marker date="1491031176462" expanded="false" signature="7561:8119" ph="{...}" />
-            <marker date="1491031176462" expanded="false" signature="7757:7772" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7790:7800" ph=" }" />
-            <marker date="1491031176462" expanded="false" signature="7832:7847" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7861:7871" ph=" }" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#8802#8803#0" expanded="true" />
+            <element signature="e#8843#8844#0" expanded="true" />
+            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
+            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -497,14 +513,23 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <marker date="1491031176462" expanded="false" signature="7561:8119" ph="{...}" />
-            <marker date="1491031176462" expanded="false" signature="7757:7772" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7790:7800" ph=" }" />
-            <marker date="1491031176462" expanded="false" signature="7832:7847" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7861:7871" ph=" }" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#8802#8803#0" expanded="true" />
+            <element signature="e#8843#8844#0" expanded="true" />
+            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
+            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -514,14 +539,23 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <marker date="1491031176462" expanded="false" signature="7561:8119" ph="{...}" />
-            <marker date="1491031176462" expanded="false" signature="7757:7772" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7790:7800" ph=" }" />
-            <marker date="1491031176462" expanded="false" signature="7832:7847" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7861:7871" ph=" }" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#8802#8803#0" expanded="true" />
+            <element signature="e#8843#8844#0" expanded="true" />
+            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
+            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -531,14 +565,23 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <marker date="1491031176462" expanded="false" signature="7561:8119" ph="{...}" />
-            <marker date="1491031176462" expanded="false" signature="7757:7772" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7790:7800" ph=" }" />
-            <marker date="1491031176462" expanded="false" signature="7832:7847" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7861:7871" ph=" }" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#8802#8803#0" expanded="true" />
+            <element signature="e#8843#8844#0" expanded="true" />
+            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
+            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -548,14 +591,23 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <marker date="1491031176462" expanded="false" signature="7561:8119" ph="{...}" />
-            <marker date="1491031176462" expanded="false" signature="7757:7772" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7790:7800" ph=" }" />
-            <marker date="1491031176462" expanded="false" signature="7832:7847" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7861:7871" ph=" }" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#8802#8803#0" expanded="true" />
+            <element signature="e#8843#8844#0" expanded="true" />
+            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
+            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -569,14 +621,23 @@
         <state relative-caret-position="-178">
           <caret line="60" column="39" lean-forward="false" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <marker date="1491031176462" expanded="false" signature="7561:8119" ph="{...}" />
-            <marker date="1491031176462" expanded="false" signature="7757:7772" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7790:7800" ph=" }" />
-            <marker date="1491031176462" expanded="false" signature="7832:7847" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7861:7871" ph=" }" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#8802#8803#0" expanded="true" />
+            <element signature="e#8843#8844#0" expanded="true" />
+            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
+            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -586,14 +647,23 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <marker date="1491031176462" expanded="false" signature="7561:8119" ph="{...}" />
-            <marker date="1491031176462" expanded="false" signature="7757:7772" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7790:7800" ph=" }" />
-            <marker date="1491031176462" expanded="false" signature="7832:7847" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7861:7871" ph=" }" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#8802#8803#0" expanded="true" />
+            <element signature="e#8843#8844#0" expanded="true" />
+            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
+            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -603,14 +673,23 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <marker date="1491031176462" expanded="false" signature="7561:8119" ph="{...}" />
-            <marker date="1491031176462" expanded="false" signature="7757:7772" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7790:7800" ph=" }" />
-            <marker date="1491031176462" expanded="false" signature="7832:7847" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7861:7871" ph=" }" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#8802#8803#0" expanded="true" />
+            <element signature="e#8843#8844#0" expanded="true" />
+            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
+            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -620,14 +699,23 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <marker date="1491031176462" expanded="false" signature="7561:8119" ph="{...}" />
-            <marker date="1491031176462" expanded="false" signature="7757:7772" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7790:7800" ph=" }" />
-            <marker date="1491031176462" expanded="false" signature="7832:7847" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7861:7871" ph=" }" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#8802#8803#0" expanded="true" />
+            <element signature="e#8843#8844#0" expanded="true" />
+            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
+            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -637,14 +725,23 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <marker date="1491031176462" expanded="false" signature="7561:8119" ph="{...}" />
-            <marker date="1491031176462" expanded="false" signature="7757:7772" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7790:7800" ph=" }" />
-            <marker date="1491031176462" expanded="false" signature="7832:7847" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7861:7871" ph=" }" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#8802#8803#0" expanded="true" />
+            <element signature="e#8843#8844#0" expanded="true" />
+            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
+            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -654,14 +751,23 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <marker date="1491031176462" expanded="false" signature="7561:8119" ph="{...}" />
-            <marker date="1491031176462" expanded="false" signature="7757:7772" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7790:7800" ph=" }" />
-            <marker date="1491031176462" expanded="false" signature="7832:7847" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7861:7871" ph=" }" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#8802#8803#0" expanded="true" />
+            <element signature="e#8843#8844#0" expanded="true" />
+            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
+            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -671,14 +777,23 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <marker date="1491031176462" expanded="false" signature="7561:8119" ph="{...}" />
-            <marker date="1491031176462" expanded="false" signature="7757:7772" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7790:7800" ph=" }" />
-            <marker date="1491031176462" expanded="false" signature="7832:7847" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7861:7871" ph=" }" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#8802#8803#0" expanded="true" />
+            <element signature="e#8843#8844#0" expanded="true" />
+            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
+            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -738,17 +853,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="309" column="32" lean-forward="true" selection-start-line="309" selection-start-column="32" selection-end-line="309" selection-end-column="32" />
+        <state relative-caret-position="234">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
             <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <marker date="1491031176462" expanded="false" signature="7561:8119" ph="{...}" />
-            <marker date="1491031176462" expanded="false" signature="7757:7772" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7790:7800" ph=" }" />
-            <marker date="1491031176462" expanded="false" signature="7832:7847" ph=" { " />
-            <marker date="1491031176462" expanded="false" signature="7861:7871" ph=" }" />
+            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
+            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
+            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
+            <element signature="e#8802#8803#0" expanded="true" />
+            <element signature="e#8843#8844#0" expanded="true" />
+            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
+            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
           </folding>
         </state>
       </provider>
