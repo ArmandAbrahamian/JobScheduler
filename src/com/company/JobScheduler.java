@@ -351,9 +351,9 @@ public class JobScheduler
         // Generate random values for job length, deadline, and profits.
         for(int index = 0; index < numberOfTests; index++)
         {
-            length[index] = ran.nextInt((10 - 1) + 1) + 1;
-            deadline[index] = ran.nextInt((30 - 1) + 1) + 1;;
-            profit[index] = ran.nextInt((100 - 0) + 1) + 0;
+            length[index] = ran.nextInt((10 - 1) + 1) + 1;     // random job length values from 1 to 10.
+            deadline[index] = ran.nextInt((30 - 1) + 1) + 1;   // random deadline values from 1 to 30.
+            profit[index] = ran.nextInt((100 - 1) + 1) + 1;    // random profit values from 1 to 100.
         }
 
         JobScheduler js = new JobScheduler(length, deadline, profit);
