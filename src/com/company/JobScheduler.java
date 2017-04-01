@@ -69,8 +69,8 @@ public class JobScheduler {
     }
 
     /**
-     * try all the combination of jobs schedule and calculate total profit : O(n!),
-     * and get the maximum profit schedule and deep copy to static brute force object : O(n^2)
+     * try all the combination of jobs schedule and calculate total profit : O(n!)
+     * and get the maximum profit schedule O(n^2) and deep copy to static brute force object O(n)
      * @param jobs
      */
     private void findMaxProfitSchedule(Job[] jobs, int start) {
@@ -343,16 +343,7 @@ public class JobScheduler {
 
 
     public static void main(String[] args) {
-        /*
-        int[] length = {7, 4, 2, 5};
-        int[] deadline = {7, 16, 8, 10};
-        int[] profit = {10, 9, 14, 13};
-        JobScheduler js = new JobScheduler(length, deadline, profit);
-        System.out.println("Jobs to be scheduled");
-        System.out.println("Job format is " +
-                "(length, deadline, profit, start, finish)");
-        js.printJobs();
-        */
+
         // Generate a random number for the number of tests.
         Random ran = new Random();
         int min = 2;
