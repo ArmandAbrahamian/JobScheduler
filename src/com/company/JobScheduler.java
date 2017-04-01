@@ -9,6 +9,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class JobScheduler {
 
@@ -243,9 +244,29 @@ public class JobScheduler {
     }
 
 
+    /**
+     * Scheduling algorithm that organizes the jobs based on the ratio of profit to job length. Takes O(n^2) time.
+     * @return Schedule based on ratio of profit to job length.
+     */
     public Schedule newApproxSchedule() //Your own creation. Must be <= O(n3)
     {
-        return null;
+        // create newApproxSchedule object,
+        Schedule newApprox_Schedule = new Schedule();
+
+        // Sort items based on the the ratio of profit to job length.
+        int tempIndex;
+
+        for (int i = 0; i < nJobs; i++) {
+            for (int j = i + 1; j < nJobs; j++) {
+                if ((jobs[j].profit / jobs[j].length) > (jobs[i].profit / jobs[i].length) )
+                {
+                    tempIndex = j;
+                    swap(tempIndex, i, jobs);
+                }
+            }
+        }
+
+        return scheduleJobs(newApprox_Schedule);
     }
 
     /**
@@ -322,10 +343,33 @@ public class JobScheduler {
 
 
     public static void main(String[] args) {
-        // write your code here
+        /*
         int[] length = {7, 4, 2, 5};
         int[] deadline = {7, 16, 8, 10};
-        int[] profit = {0, 0, 0, 0};
+        int[] profit = {10, 9, 14, 13};
+        JobScheduler js = new JobScheduler(length, deadline, profit);
+        System.out.println("Jobs to be scheduled");
+        System.out.println("Job format is " +
+                "(length, deadline, profit, start, finish)");
+        js.printJobs();
+        */
+        // Generate a random number for the number of tests.
+        Random ran = new Random();
+        int min = 2;
+        int max = 11;
+        int numberOfTests = ran.nextInt((max - min) + 1) + min;
+
+        int[] length = new int[numberOfTests];
+        int[] deadline = new int[numberOfTests];
+        int[] profit = new int[numberOfTests];
+
+        // Generate random values for job length, deadline, and profits.
+        for(int index = 0; index < numberOfTests; index++)
+        {
+            length[index] = ran.nextInt((10 - 1) + 1) + 1;
+            deadline[index] = ran.nextInt((30 - 1) + 1) + 1;;
+            profit[index] = ran.nextInt((100 - 0) + 1) + 0;
+        }
         JobScheduler js = new JobScheduler(length, deadline, profit);
         System.out.println("Jobs to be scheduled");
         System.out.println("Job format is " +
@@ -351,6 +395,11 @@ public class JobScheduler {
         System.out.println("\nHPF with unprofitable jobs last");
         Schedule HPFSchedule = js.makeScheduleHPF();
         System.out.println(HPFSchedule);
+
+        // ------------------------------
+        System.out.println("\nYour own creative solution");
+        Schedule NASSchedule = js.newApproxSchedule();
+        System.out.println(NASSchedule);
     }
 
 }//end of JobScheduler class

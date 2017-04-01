@@ -22,26 +22,10 @@
       <file leaf-file-name="JobScheduler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="291">
+              <caret line="367" column="9" lean-forward="true" selection-start-line="367" selection-start-column="9" selection-end-line="367" selection-end-column="9" />
               <folding>
-                <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-                <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-                <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
-                <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
-                <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
-                <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-                <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-                <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
-                <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-                <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-                <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
-                <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
-                <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
-                <element signature="e#8802#8803#0" expanded="true" />
-                <element signature="e#8843#8844#0" expanded="true" />
-                <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
-                <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,7 +56,7 @@
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1822" />
-    <option name="height" value="1098" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -358,8 +342,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1822" height="1098" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1822" height="1092" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -368,48 +351,27 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8563996" sideWeight="0.5044346" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43080124" sideWeight="0.4955654" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33652925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35927504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.50222224" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.4977778" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33652925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35927504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3995943" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.4977778" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33652925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35927504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995943" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -430,188 +392,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="e#8802#8803#0" expanded="true" />
-            <element signature="e#8843#8844#0" expanded="true" />
-            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
-            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="e#8802#8803#0" expanded="true" />
-            <element signature="e#8843#8844#0" expanded="true" />
-            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
-            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="e#8802#8803#0" expanded="true" />
-            <element signature="e#8843#8844#0" expanded="true" />
-            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
-            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="e#8802#8803#0" expanded="true" />
-            <element signature="e#8843#8844#0" expanded="true" />
-            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
-            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="e#8802#8803#0" expanded="true" />
-            <element signature="e#8843#8844#0" expanded="true" />
-            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
-            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="e#8802#8803#0" expanded="true" />
-            <element signature="e#8843#8844#0" expanded="true" />
-            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
-            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="e#8802#8803#0" expanded="true" />
-            <element signature="e#8843#8844#0" expanded="true" />
-            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
-            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Downloads/JobScheduler/src/com/company/JobScheduler.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/lang/Object.java" />
     <entry file="file://$USER_HOME$/Project 1/src/Sorts.java" />
@@ -621,23 +401,7 @@
         <state relative-caret-position="-178">
           <caret line="60" column="39" lean-forward="false" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
           <folding>
-            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="e#8802#8803#0" expanded="true" />
-            <element signature="e#8843#8844#0" expanded="true" />
-            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
-            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -647,23 +411,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="e#8802#8803#0" expanded="true" />
-            <element signature="e#8843#8844#0" expanded="true" />
-            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
-            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -673,23 +421,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="e#8802#8803#0" expanded="true" />
-            <element signature="e#8843#8844#0" expanded="true" />
-            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
-            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -699,23 +431,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="e#8802#8803#0" expanded="true" />
-            <element signature="e#8843#8844#0" expanded="true" />
-            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
-            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -725,23 +441,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="e#8802#8803#0" expanded="true" />
-            <element signature="e#8843#8844#0" expanded="true" />
-            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
-            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -751,23 +451,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="e#8802#8803#0" expanded="true" />
-            <element signature="e#8843#8844#0" expanded="true" />
-            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
-            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -777,23 +461,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="e#8802#8803#0" expanded="true" />
-            <element signature="e#8843#8844#0" expanded="true" />
-            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
-            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -806,7 +474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,7 +481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -822,7 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,26 +518,214 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="3042">
+          <caret line="281" column="9" lean-forward="true" selection-start-line="281" selection-start-column="9" selection-end-line="281" selection-end-column="9" />
           <folding>
-            <element signature="docComment;method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#JobScheduler#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#printJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#findMaxProfitSchedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleEDF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#makeScheduleSJF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#makeScheduleHPF#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#scheduleJobs#0;class#JobScheduler#0" expanded="false" />
-            <element signature="docComment;method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="method#swap#0;class#JobScheduler#0" expanded="false" />
-            <element signature="class#Schedule#0;class#JobScheduler#0" expanded="false" />
-            <element signature="e#8802#8803#0" expanded="true" />
-            <element signature="e#8843#8844#0" expanded="true" />
-            <marker date="1491058097972" expanded="false" signature="8876:8891" ph=" { " />
-            <marker date="1491058097972" expanded="false" signature="8905:8915" ph=" }" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Downloads/JobScheduler/src/com/company/JobScheduler.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/lang/Object.java" />
+    <entry file="file://$USER_HOME$/Project 1/src/Sorts.java" />
+    <entry file="file://C:/COMP282/Programming Assignments/Programming Assignment #4/prog4.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-178">
+          <caret line="60" column="39" lean-forward="false" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Downloads/JobScheduler/src/com/company/JobScheduler.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/lang/Object.java" />
+    <entry file="file://$USER_HOME$/Project 1/src/Sorts.java" />
+    <entry file="file://C:/COMP282/Programming Assignments/Programming Assignment #4/prog4.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/AbstractCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="1335" column="0" lean-forward="false" selection-start-line="1335" selection-start-column="0" selection-end-line="1335" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="3180" column="0" lean-forward="false" selection-start-line="3180" selection-start-column="0" selection-end-line="3180" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="457" column="0" lean-forward="false" selection-start-line="457" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
+          <folding>
+            <element signature="e#6252#6253#0" expanded="false" />
+            <element signature="e#6320#6321#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/JobScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="367" column="9" lean-forward="true" selection-start-line="367" selection-start-column="9" selection-end-line="367" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
