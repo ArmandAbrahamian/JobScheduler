@@ -8,6 +8,8 @@
 
 package com.company;
 
+import jdk.management.resource.internal.inst.FileOutputStreamRMHooks;
+
 import java.util.ArrayList;
 
 public class JobScheduler {
@@ -44,7 +46,43 @@ public class JobScheduler {
     public Schedule bruteForceSolution() {
         Schedule bruteForce_Schedule = new Schedule();
 
+        // array of all the possible combinations of index
+        getAllComb(jobs,0);
+
+
         return bruteForce_Schedule;
+    }
+
+    /**
+     * create a a list of all possible combination of 1 to n jobs indices
+     * @param jobs
+     */
+    private void getAllComb(Job[] jobs, int start) {
+
+        int size = jobs.length;
+
+        if(size == start + 1) {
+            // create schedule
+            Schedule sc = new Schedule();
+
+            for (int i = 0; i < size; i++) {
+                System.out.print(jobs[i] + ",  ");
+                sc.schedule.add(jobs[i]);
+            }
+            // print out the jobs combination and profit.
+            // THIS PART IS NOT DONE,
+            // IT STILL NEED TO CHECK IF JOBS CAN BE DONE IN DEADLINE
+            System.out.print(scheduleJobs(sc).profit);
+            System.out.println();
+        }
+        else {
+            for (int i = start; i < size; i++) {
+                Job temp = jobs[i];
+                jobs[i] = jobs[start];
+                jobs[start] = temp;
+                getAllComb(jobs, start + 1);
+            }
+        }
     }
 
     /**
@@ -268,6 +306,8 @@ public class JobScheduler {
         System.out.println("Job format is " +
                 "(length, deadline, profit, start, finish)");
         js.printJobs();
+
+        js.bruteForceSolution();
 
         //---------------------------------------
         System.out.println("\nEDF with unprofitable jobs last ");
