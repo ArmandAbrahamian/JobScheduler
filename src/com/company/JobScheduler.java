@@ -12,8 +12,8 @@ import jdk.management.resource.internal.inst.FileOutputStreamRMHooks;
 
 import java.util.ArrayList;
 
-public class JobScheduler {
-
+public class JobScheduler
+{
     private int nJobs;
     private Job[] jobs;
 
@@ -24,13 +24,15 @@ public class JobScheduler {
      * @param deadline  the deadline of each job
      * @param profit    the amount of profit for each job
      */
-    public JobScheduler(int[] joblength, int[] deadline, int[] profit) {
+    public JobScheduler(int[] joblength, int[] deadline, int[] profit)
+    {
         //Set nJobs
         nJobs = joblength.length;
 
         //Fill jobs array. The kth job entered has JobNo = k;
         jobs = new Job[nJobs];
-        for (int index = 0; index < nJobs; index++) {
+        for (int index = 0; index < nJobs; index++)
+        {
             jobs[index] = new Job(index, joblength[index], deadline[index], profit[index]);
         }
     }
@@ -43,7 +45,8 @@ public class JobScheduler {
     }
 
     //Brute force. Try all n! orderings. Return the schedule with the most profit
-    public Schedule bruteForceSolution() {
+    public Schedule bruteForceSolution()
+    {
         Schedule bruteForce_Schedule = new Schedule();
 
         // array of all the possible combinations of index
@@ -86,20 +89,19 @@ public class JobScheduler {
     }
 
     /**
-     *
-     * @return
+     * Earliest deadline first schedule. Schedule items contributing 0 to total profit last
+     * @return Earliest Deadline First schedule.
      */
     public Schedule makeScheduleEDF()
-    //earliest deadline first schedule. Schedule items contributing 0 to total profit last
     {
         // create edf_schedule object
         Schedule EDF_Schedule = new Schedule();
 
-        // for sort
-        int tempIndex;
-
         // Sort items by deadline from small to large.
-        for (int i = 0; i < nJobs; i++) {
+        int tempIndex;
+        
+        for (int i = 0; i < nJobs; i++)
+        {
             int earliestDeadlineJobIndex = i;
 
             for (int j = i + 1; j < nJobs; j++) {
@@ -108,7 +110,6 @@ public class JobScheduler {
                     swap(tempIndex, i, jobs);
                 }
             }
-
         }
 
         return scheduleJobs(EDF_Schedule);
@@ -119,7 +120,7 @@ public class JobScheduler {
      * if each job unable to finish before the deadline,
      * it move to end of array.
      *
-     * @return
+     * @return Shortest Job FIrst schedule.
      */
     public Schedule makeScheduleSJF()
     //shortest job first schedule. Schedule items contributing 0 to total profit last
@@ -127,11 +128,9 @@ public class JobScheduler {
         // create sjf_schedule object
         Schedule SJF_Schedule = new Schedule();
 
-
-        // for sort
+        // Sort items by deadline from small to large = O(n).
         int tempIndex;
 
-        // Sort items by deadline from small to large.
         for (int i = 0; i < nJobs; i++) {
             for (int j = i + 1; j < nJobs; j++) {
                 if (jobs[j].length < jobs[i].length) {
@@ -140,26 +139,23 @@ public class JobScheduler {
                 }
             }
         }
-
+        
         return scheduleJobs(SJF_Schedule);
 
     }
 
     /**
-     *
-     * @return
+     * highest profit first schedule. Schedule items contributing 0 to total profit last
+     * @return  Highest Profit first schedule.
      */
     public Schedule makeScheduleHPF()
-    //highest profit first schedule. Schedule items contributing 0 to total profit last
     {
         // create hpf_schedule object,
         Schedule HPF_Schedule = new Schedule();
 
-
-        // for sort
-        int tempIndex;
-
         // Sort items by deadline from small to large.
+        int tempIndex;
+        
         for (int i = 0; i < nJobs; i++) {
             for (int j = i + 1; j < nJobs; j++) {
                 if (jobs[j].profit > jobs[i].profit) {
@@ -173,23 +169,25 @@ public class JobScheduler {
     }
 
     /**
-     *
-     * @param schedule
-     * @return
+     * Helper function to do figure out if jobs finish by their deadline, adding the profit to the sum if they do.
+     * @param schedule We pass in the schedule for a particular scheduling algorithm.
+     * @return We return the final schedule for that scheduling algorithm.
      */
-    public Schedule scheduleJobs(Schedule schedule) {
-
+    public Schedule scheduleJobs(Schedule schedule)
+    {
         // temporary job array list
         Schedule temp_jobs = new Schedule();
 
         //schedule jobs
         int startTime = 0;
         int profits = 0;
-        for (int i = 0; i < nJobs; i++) {
+        for (int i = 0; i < nJobs; i++)
+        {
 
             // if the job can finish earlier than deadline
             // update profits, and schedule jobs
-            if ((startTime + jobs[i].length) <= jobs[i].deadline) {
+            if ((startTime + jobs[i].length) <= jobs[i].deadline)
+            {
                 jobs[i].start = startTime;
                 jobs[i].finish = startTime + jobs[i].length;
                 startTime = jobs[i].finish;
@@ -197,15 +195,17 @@ public class JobScheduler {
                 schedule.add(jobs[i]);
             }
 
-            // we move to temporary array list if it can't be done in deadline
-            else {
+            // Move the job to a temporary array list if it can't be done by the deadline.
+            else
+            {
                 temp_jobs.add(jobs[i]);
             }
 
         }
-        // schedule 0 profit jobs
-        // and put temporary jobs to end of schedule
-        for (int i = 0; i < temp_jobs.schedule.size(); i++) {
+        // schedule 0 profit for jobs that don't meet the deadline
+        // and place the temporary jobs at the end of the schedule
+        for (int i = 0; i < temp_jobs.schedule.size(); i++)
+        {
             temp_jobs.schedule.get(i).start = startTime;
             temp_jobs.schedule.get(i).finish = startTime + temp_jobs.schedule.get(i).length;
             startTime = temp_jobs.schedule.get(i).finish;
@@ -215,17 +215,36 @@ public class JobScheduler {
         // update profit of this schedule
         schedule.profit = profits;
 
-        return schedule;
-    }
-
-
-    public Schedule newApproxSchedule() //Your own creation. Must be <= O(n3)
-    {
-        return null;
+        return schedule;                                                                             
     }
 
     /**
-     * Helper function to swap two elements in the array.
+     * Scheduling algorithm that organizes the jobs based on the ratio of profit to job length. Takes O(n^2) time.
+     * @return Schedule based on ratio of profit to job length.
+     */
+    public Schedule newApproxSchedule() //Your own creation. Must be <= O(n3)
+    {
+        // create newApproxSchedule object,
+        Schedule newApprox_Schedule = new Schedule();
+
+        // Sort items based on the the ratio of profit to job length.
+        int tempIndex;
+
+        for (int i = 0; i < nJobs; i++) {
+            for (int j = i + 1; j < nJobs; j++) {
+                if ((jobs[j].profit / jobs[j].length) > (jobs[i].profit / jobs[i].length) )
+                {
+                    tempIndex = j;
+                    swap(tempIndex, i, jobs);
+                }
+            }
+        }
+        
+        return scheduleJobs(newApprox_Schedule);
+    }
+
+    /**
+     * Helper function to swap two elements in the job array.
      *
      * @param item1
      * @param item2
@@ -296,10 +315,10 @@ public class JobScheduler {
     }// end of Schedule class
 
 
-    public static void main(String[] args) {
-        // write your code here
-        int[] length = {7, 4, 2, 5};
-        int[] deadline = {7, 16, 8, 10};
+    public static void main(String[] args)
+    {
+        int[] length = {7,4,2,5};
+        int[] deadline = {7 ,16 ,8, 10};
         int[] profit = {10, 9, 14, 13};
         JobScheduler js = new JobScheduler(length, deadline, profit);
         System.out.println("Jobs to be scheduled");
@@ -307,7 +326,8 @@ public class JobScheduler {
                 "(length, deadline, profit, start, finish)");
         js.printJobs();
 
-        js.bruteForceSolution();
+        //--------------------------------------------
+        System.out.println("\nOptimal Solution Using Brute Force O(n!)");
 
         //---------------------------------------
         System.out.println("\nEDF with unprofitable jobs last ");
@@ -323,6 +343,11 @@ public class JobScheduler {
         System.out.println("\nHPF with unprofitable jobs last");
         Schedule HPFSchedule = js.makeScheduleHPF();
         System.out.println(HPFSchedule);
+
+        // ------------------------------
+        System.out.println("\nYour own creative solution");
+        Schedule NASSchedule = js.newApproxSchedule();
+        System.out.println(NASSchedule);
     }
 
 }//end of JobScheduler class
