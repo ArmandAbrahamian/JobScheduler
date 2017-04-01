@@ -70,7 +70,7 @@ public class JobScheduler
 
     /**
      * try all the combination of jobs schedule and calculate total profit : O(n!)
-     * and get the maximum profit schedule O(n^2) and deep copy to static brute force object O(n)
+     * and get the maximum profit schedule O(n) and deep copy to static brute force object O(n)
      * @param jobs
      */
     private void findMaxProfitSchedule(Job[] jobs, int start) {
