@@ -77,7 +77,7 @@ public class JobScheduler
 
         int size = jobs.length;
 
-        if(size == start + 1) {
+        if(start >= size - 1) {
             // create schedule
             Schedule sc = new Schedule();
             // it will schedule jobs and calculate total profit
@@ -101,10 +101,17 @@ public class JobScheduler
         // driver to try all the combinations (permutation)
         else {
             for (int i = start; i < size; i++) {
+
                 Job temp = jobs[i];
                 jobs[i] = jobs[start];
                 jobs[start] = temp;
+
                 findMaxProfitSchedule(jobs, start + 1);
+
+                temp = jobs[start];
+                jobs[start] = jobs[i];
+                jobs[i] = temp;
+
             }
         }
 
@@ -340,7 +347,7 @@ public class JobScheduler
     {
         // Generate a random number for the number of tests.
         Random ran = new Random();
-        int min = 2;
+        int min = 2 ;
         int max = 11;
         int numberOfTests = ran.nextInt((max - min) + 1) + min;
 
