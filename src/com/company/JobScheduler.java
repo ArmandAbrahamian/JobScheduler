@@ -258,7 +258,8 @@ public class JobScheduler
 
         for (int i = 0; i < nJobs; i++) {
             for (int j = i + 1; j < nJobs; j++) {
-                if ((jobs[j].profit / jobs[j].length) > (jobs[i].profit / jobs[i].length) )
+                if ((jobs[j].profit / jobs[j].length) > (jobs[i].profit / jobs[i].length)
+                        && jobs[j].deadline < jobs[i].deadline)
                 {
                     tempIndex = j;
                     swap(tempIndex, i, jobs);
@@ -345,25 +346,13 @@ public class JobScheduler
     
     public static void main(String[] args)
     {
-        // Generate a random number for the number of tests.
-        Random ran = new Random();
-        int min = 2 ;
-        int max = 11;
-        int numberOfTests = ran.nextInt((max - min) + 1) + min;
+        // Test Case A:
+        int[] lengthA = { 7,4,2,5};
+        int[] deadlineA = {7 ,16 ,8, 10};
+        int[] profitA = { 10, 9, 14, 13};
+        JobScheduler js = new JobScheduler(lengthA, deadlineA, profitA);
 
-        int[] length = new int[numberOfTests];
-        int[] deadline = new int[numberOfTests];
-        int[] profit = new int[numberOfTests];
-
-        // Generate random values for job length, deadline, and profits.
-        for(int index = 0; index < numberOfTests; index++)
-        {
-            length[index] = ran.nextInt((10 - 1) + 1) + 1;     // random job length values from 1 to 10.
-            deadline[index] = ran.nextInt((30 - 1) + 1) + 1;   // random deadline values from 1 to 30.
-            profit[index] = ran.nextInt((100 - 1) + 1) + 1;    // random profit values from 1 to 100.
-        }
-
-        JobScheduler js = new JobScheduler(length, deadline, profit);
+        System.out.println("Test Case A:\n");
         System.out.println("Jobs to be scheduled");
         System.out.println("Job format is " +
                 "(length, deadline, profit, start, finish)");
@@ -393,6 +382,79 @@ public class JobScheduler
         System.out.println("\nYour own creative solution");
         Schedule NASSchedule = js.newApproxSchedule();
         System.out.println(NASSchedule);
+
+        // Test Case B:
+        int[] lengthB = {2,3,1,10,7,4,2,5,7,7};
+        int[] deadlineB = {10,12, 9 ,22,  10, 4, 18, 15, 5, 9};
+        int[] profitB = {2,5,13,28,9,14, 2, 7, 3, 10};
+        JobScheduler jsB = new JobScheduler(lengthB, deadlineB, profitB);
+
+        System.out.println("Test Case B:\n");
+        System.out.println("Jobs to be scheduled");
+        System.out.println("Job format is " +
+                "(length, deadline, profit, start, finish)");
+        jsB.printJobs();
+
+        //---------------------------------------
+        System.out.println("\nOptimal Solution Using Brute Force O(n!)");
+        Schedule bestScheduleB = jsB.bruteForceSolution();
+        System.out.println(bestScheduleB);
+
+        //---------------------------------------
+        System.out.println("\nEDF with unprofitable jobs last ");
+        Schedule EDFPScheduleB = jsB.makeScheduleEDF();
+        System.out.println(EDFPScheduleB);
+
+        //-------------------------------------
+        System.out.println("\nSJF with unprofitable jobs last");
+        Schedule SJFPScheduleB = jsB.makeScheduleSJF();
+        System.out.println(SJFPScheduleB);
+
+        //--------------------------------------------
+        System.out.println("\nHPF with unprofitable jobs last");
+        Schedule HPFScheduleB = jsB.makeScheduleHPF();
+        System.out.println(HPFScheduleB);
+
+        // ------------------------------
+        System.out.println("\nYour own creative solution");
+        Schedule NASScheduleB = jsB.newApproxSchedule();
+        System.out.println(NASScheduleB);
+
+        // Test Case C:
+        int[] lengthC = {2,3,1,10,7,  4,6,9,3,2,  5,2,5,7,7,  6,3,7,8,4,  5,2,9,10,5};
+        int[] deadlineC = {10,12,15,8,10,  9,22,12,15,35,  29,32,45,41,13,
+                16,10,20,10,4,  18,15,5,9, 30 };
+        int[] profitC = {2,5,13,28,8, 7,6,5,3,4,  9,7,6,9,14,  2,7,11,3,10,
+                8,5,9,10,3};
+        JobScheduler jsC = new JobScheduler(lengthC, deadlineC, profitC);
+
+        System.out.println("Test Case C:\n");
+        System.out.println("Jobs to be scheduled");
+        System.out.println("Job format is " +
+                "(length, deadline, profit, start, finish)");
+        jsC.printJobs();
+
+        // Do not run brute force algorithm since the test case has 25 jobs.
+
+        //---------------------------------------
+        System.out.println("\nEDF with unprofitable jobs last ");
+        Schedule EDFPScheduleC = jsC.makeScheduleEDF();
+        System.out.println(EDFPScheduleC);
+
+        //-------------------------------------
+        System.out.println("\nSJF with unprofitable jobs last");
+        Schedule SJFPScheduleC = jsC.makeScheduleSJF();
+        System.out.println(SJFPScheduleC);
+
+        //--------------------------------------------
+        System.out.println("\nHPF with unprofitable jobs last");
+        Schedule HPFScheduleC = jsC.makeScheduleHPF();
+        System.out.println(HPFScheduleC);
+
+        // ------------------------------
+        System.out.println("\nYour own creative solution");
+        Schedule NASScheduleC = jsC.newApproxSchedule();
+        System.out.println(NASScheduleC);
     }
 
 }//end of JobScheduler class
