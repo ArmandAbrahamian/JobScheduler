@@ -162,7 +162,7 @@ public class JobScheduler
      * it move to end of array.
      * T(n) = O(n^2)
      *
-     * @return Shortest Job FIrst schedule.
+     * @return Shortest Job First schedule.
      */
     public Schedule makeScheduleSJF()
     //shortest job first schedule. Schedule items contributing 0 to total profit last
@@ -406,7 +406,7 @@ public class JobScheduler
         int[] profitB = {2,5,13,28,9,14, 2, 7, 3, 10};
         JobScheduler jsB = new JobScheduler(lengthB, deadlineB, profitB);
 
-        System.out.println("Test Case B:\n");
+        System.out.println("\nTest Case B:\n");
         System.out.println("Jobs to be scheduled");
         System.out.println("Job format is " +
                 "(length, deadline, profit, start, finish)");
@@ -445,13 +445,14 @@ public class JobScheduler
                 8,5,9,10,3};
         JobScheduler jsC = new JobScheduler(lengthC, deadlineC, profitC);
 
-        System.out.println("Test Case C:\n");
+        System.out.println("\nTest Case C:\n");
         System.out.println("Jobs to be scheduled");
         System.out.println("Job format is " +
                 "(length, deadline, profit, start, finish)");
         jsC.printJobs();
 
         // Do not run brute force algorithm since the test case has 25 jobs.
+        System.out.println("\nSkip brute force algorithm for Test Case C ");
 
         //---------------------------------------
         System.out.println("\nEDF with unprofitable jobs last ");
