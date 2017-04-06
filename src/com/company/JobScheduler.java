@@ -46,6 +46,11 @@ public class JobScheduler
         }
     }
 
+    /**
+     * try all the possible schedule with n jobs.
+     *
+     * @return Schedule that has maximum profit
+     */
     //Brute force. Try all n! orderings. Return the schedule with the most profit
     public Schedule bruteForceSolution()
     {
@@ -54,7 +59,7 @@ public class JobScheduler
         // initialize to 0 for max profit when this method called
         maxProfit = 0;
 
-        // array of all the possible combinations of index
+        // find maximum profit Schedule
         findMaxProfitSchedule(jobs,0);
 
         // update schedule profit
@@ -69,9 +74,12 @@ public class JobScheduler
     }
 
     /**
-     * try all the combination of jobs schedule and calculate total profit : O(n!)
-     * and get the maximum profit schedule O(n) and deep copy to static brute force object O(n)
+     * try all the combination of jobs schedule and calculate total profit, and compare with current max profit: O(n!)
+     * and if it is bigger than current Total max profit, deep copy to static schedule object (worst case): O(n^2)
+     * Totally: O(n!)
+     *
      * @param jobs
+     * @param start
      */
     private void findMaxProfitSchedule(Job[] jobs, int start) {
 
@@ -97,17 +105,20 @@ public class JobScheduler
                     i++;
                 }
             }
+            return;
         }
         // driver to try all the combinations (permutation)
         else {
             for (int i = start; i < size; i++) {
-
+                // Swap those jobs at indices start and i
                 Job temp = jobs[i];
                 jobs[i] = jobs[start];
                 jobs[start] = temp;
 
+                // Recurse on the sub array of jobs [start+1 .... end]
                 findMaxProfitSchedule(jobs, start + 1);
 
+                // Swap the jobs back
                 temp = jobs[start];
                 jobs[start] = jobs[i];
                 jobs[i] = temp;
@@ -118,7 +129,9 @@ public class JobScheduler
     }
 
     /**
-     * Earliest deadline first schedule. Schedule items contributing 0 to total profit last
+     * Earliest deadline first schedule. Schedule items contributing 0 to total profit last.
+     * T(n) = O(n^2)
+     *
      * @return Earliest Deadline First schedule.
      */
     public Schedule makeScheduleEDF()
@@ -145,9 +158,9 @@ public class JobScheduler
     }
 
     /**
-     * sort the jobs in shortest job(length) first order
-     * if each job unable to finish before the deadline,
+     * sort the jobs in shortest job(length) first order if each job unable to finish before the deadline,
      * it move to end of array.
+     * T(n) = O(n^2)
      *
      * @return Shortest Job FIrst schedule.
      */
@@ -174,7 +187,10 @@ public class JobScheduler
 
     /**
      * highest profit first schedule. Schedule items contributing 0 to total profit last
+     * T(n) = O(n^2)
+     *
      * @return  Highest Profit first schedule.
+     *
      */
     public Schedule makeScheduleHPF()
     {
@@ -198,6 +214,7 @@ public class JobScheduler
 
     /**
      * Helper function to do figure out if jobs finish by their deadline, adding the profit to the sum if they do.
+     * Time complexity: O(2n) = O(n)
      * @param schedule We pass in the schedule for a particular scheduling algorithm.
      * @return We return the final schedule for that scheduling algorithm.
      */
